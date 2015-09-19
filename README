@@ -1,0 +1,42 @@
+Author: Frank Gauthier
+
+
+This program is intended to allow the user to define multiple matrices of any size.
+
+Once the matrices are defined the user can then perform operations such as:
+
+- Addition
+- Subtraction
+- Scalar Multiplication
+- Matrix Multiplication
+- Calculate Determinent
+- Find inverse
+
+
+Example
+--------
+    
+m1 = [2 1] m2= [1 4] 
+     [0 9]     [4 0]
+
+
+m1 + m2 = [3 5]
+	  [4 9]
+ 
+
+
+
+
+The user can use commands to manipulate the matrices:
+
+Commands			Description
+---------			------------
+
+- Create <name>			(create a new matrix)
+- Delete <name>			(delete a matrix)
+- Load	 <name>			(load values into the matrix sequentially)
+- Resize <name rows cols>	(resize the matrix)
+- Store	 			(store a value in a particular row and column)
+- File <filename> <name>	(reads a matrix from a file)
+
+
