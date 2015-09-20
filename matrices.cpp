@@ -1,12 +1,14 @@
 #include "matrix.h"
 
+int numOfMats = 0;
+
 //create matrix with default size of: 2 x 2
 Matrix::Matrix(void){
 	
 	this->setRows(2);
 	this->setCols(2);
 	this->resize(2,2);
-	
+	this->setId(numOfMats++);
 }
 
 
@@ -17,6 +19,7 @@ Matrix::Matrix(int row, int col){
 	this->setRows(row);
 	this->setCols(col);
 	this->resize(row,col);
+	this->setId(numOfMats++);
 }
 
 
@@ -86,6 +89,18 @@ void Matrix::resize(int rows, int cols){
 }
 
 
+
+void Matrix::setId(int id){
+	this->id = id;
+}
+
+
+
+int Matrix::getId(){
+	printf("%d",this->id);	
+}
+
+
 // calls a routine that lets the user enter integers 1 at a time
 void Matrix::load(){
 	int input;
@@ -98,6 +113,5 @@ void Matrix::load(){
 	}
 
 }
-
 
 
